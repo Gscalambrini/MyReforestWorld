@@ -196,8 +196,8 @@ public class ConexaoController {
         ConexaoDAO cadastro = new ConexaoDAO();
         int retorno = cadastro.cadastrarEvento(
                 view.getNomeEventoTextField().getText(),
-                view.getDataInicio(),
-                view.getDataTermino(),
+                view.getInicioTextField().getText(),
+                view.getTerminoTextField().getText(),
                 view.getDescricaoTextArea().getText(),
                 view.getDoacoesSlider().getValue(),
                 view.getEstadoComboBox(),
